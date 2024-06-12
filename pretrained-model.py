@@ -20,4 +20,5 @@ model = Model(inputs= base_model.input, outputs = x)
 model.compile(optimizer = 'adam', loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'] )
 
 
+
 model.summary()
