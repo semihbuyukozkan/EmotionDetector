@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="350e986e-69ee-4458-9082-9953b8b46d12" name="Changes" comment="pre-trained model added">
+    <list default="true" id="350e986e-69ee-4458-9082-9953b8b46d12" name="Changes" comment="opencv integrated successfully">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained-model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dataset-integration" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -35,9 +40,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.pretrained-model.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dataset-integration"
+    "git-widget-placeholder": "opencv-integration"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -64,11 +70,36 @@
       <option name="project" value="LOCAL" />
       <updated>1718209058688</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pre-trained model added">
+      <option name="closed" value="true" />
+      <created>1718212776528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718212776528</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pre-trained model added">
+      <option name="closed" value="true" />
+      <created>1718214157342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718214157342</updated>
+    </task>
+    <task id="LOCAL-00004" summary="opencv integrated successfully">
+      <option name="closed" value="true" />
+      <created>1718221556558</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718221556558</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pre-trained model added" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre-trained model added" />
+    <MESSAGE value="opencv integrated successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="opencv integrated successfully" />
   </component>
 </project>
