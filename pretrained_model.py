@@ -1,27 +1,24 @@
 import tensorflow as tf
-
-from tensorflow.keras import layers
-from tensorflow.keras import Model
-
+from tensorflow.keras.optimizers import RMSprop
+import tensorflow_hub as hub
 def model_creator():
-    #model_url = 'https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4'
+    model_url = 'https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4'
 
-    base_model = tf.keras.applications.InceptionV3(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+    pre_trained_model = hub.KerasLayer(model_url, input_shape=(224, 224, 3), trainable=False)
 
-    #base_model.summary()
+    model = tf.keras.Sequential([
+        pre_trained_model,
+        tf.keras.layers.Dense(1024, activation='relu'),
+        tf.keras.layers.Dropout(0.2),
+        tf.keras.layers.Dense(7, activation='softmax')
+    ])
 
-    x = layers.GlobalAveragePooling2D()(base_model.output)
-    x = layers.Dense(1024, activation='relu')(x)
-    x = layers.Dropout(0.2)(x)
-    x = layers.Dense(7, activation='softmax')(x)
 
-    model = Model(inputs= base_model.input, outputs = x)
-
-    model.compile(optimizer = 'adam', loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'] )
+    model.compile(optimizer=RMSprop(learning_rate=0.0001), loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'] )
 
     model.summary()
 
-    model.save('emotion_detection_model.h5')
+    model.save('C:\TensorflowModels\emotion_detection_model.h5', save_format='h5')
 
 if __name__ == "__main__":
     model_creator()

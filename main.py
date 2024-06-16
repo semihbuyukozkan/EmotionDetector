@@ -1,18 +1,18 @@
 import cv2
 import numpy as np
-from keras.src.saving.saving_api import load_model
 import os
 import pretrained_model
+import tensorflow as tf
+import tensorflow_hub as hub
 
-
-model_path = 'emotion_detection_model.h5'
+model_path = 'C:\TensorflowModels\emotion_detection_model.h5'
 if not os.path.exists(model_path):
     print("Creatıng new model...")
     pretrained_model.model_creator()
 else:
     print("Model file found. The model is loading...")
 
-model = load_model('emotion_detection_model.h5')
+model = tf.keras.models.load_model(model_path, compile=True, custom_objects={'KerasLayer': hub.KerasLayer})
 
 cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
