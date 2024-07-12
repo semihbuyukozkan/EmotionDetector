@@ -2,8 +2,8 @@ import os
 import random
 import shutil
 
-train_dir = "C:\\Users\\semih\\PycharmProjects\\EmotionDetector\\FER2013\\train"
-test_dir = "C:\\Users\\semih\\PycharmProjects\\EmotionDetector\\FER2013\\test"
+train_dir = "FER2013\\train"
+test_dir = "FER2013\\test"
 
 #we split test data to get validation and test datas from it
 def split_test_data(test_dir, validation_split=0.5):
