@@ -64,11 +64,15 @@ def model_creator():
         tf.keras.layers.Conv2D(256, (3, 3), activation='relu', kernel_regularizer=l2(0.01)),
         tf.keras.layers.BatchNormalization(),
         tf.keras.layers.MaxPooling2D(2, 2),
-        tf.keras.layers.Dropout(0.4),
+        tf.keras.layers.Conv2D(512, (3, 3), activation='relu', kernel_regularizer=l2(0.01)),
+        tf.keras.layers.BatchNormalization(),
+        tf.keras.layers.MaxPooling2D(2, 2),
+        tf.keras.layers.Dropout(0.5),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(512, activation='relu', kernel_regularizer=l2(0.01)),
         tf.keras.layers.Dropout(0.5),
         tf.keras.layers.Dense(256, activation='relu', kernel_regularizer=l2(0.01)),
+        tf.keras.layers.Dense(128 , activation='relu', kernel_regularizer=l2(0.01)),
         tf.keras.layers.Dense(7, activation='softmax')
     ])
 
