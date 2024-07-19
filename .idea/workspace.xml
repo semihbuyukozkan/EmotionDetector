@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="350e986e-69ee-4458-9082-9953b8b46d12" name="Changes" comment="-dynamic learning rate added&#10;-l2 regularization added&#10;validation accuracy increased to %60">
+    <list default="true" id="350e986e-69ee-4458-9082-9953b8b46d12" name="Changes" comment="model created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
@@ -89,7 +89,7 @@
       <workItem from="1720773944775" duration="14100000" />
       <workItem from="1720813071632" duration="573000" />
       <workItem from="1720813823448" duration="2086000" />
-      <workItem from="1721392166161" duration="5552000" />
+      <workItem from="1721392166161" duration="6061000" />
     </task>
     <task id="LOCAL-00001" summary="pre-trained model added">
       <option name="closed" value="true" />
@@ -155,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720813241354</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="model created.">
+      <option name="closed" value="true" />
+      <created>1721398291456</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721398291456</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +186,8 @@
     <MESSAGE value="exit button added" />
     <MESSAGE value="bugs fixed" />
     <MESSAGE value="-dynamic learning rate added&#10;-l2 regularization added&#10;validation accuracy increased to %60" />
-    <option name="LAST_COMMIT_MESSAGE" value="-dynamic learning rate added&#10;-l2 regularization added&#10;validation accuracy increased to %60" />
+    <MESSAGE value="model created." />
+    <option name="LAST_COMMIT_MESSAGE" value="model created." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EmotionDetector$deneme.coverage" NAME="deneme Coverage Results" MODIFIED="1720725757747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
